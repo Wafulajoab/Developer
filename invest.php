@@ -6,7 +6,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment - Invest</title>
-    <link rel="stylesheet" href="invest.css">
+ <style>
+    body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('eagles.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: fadeBackground 8s infinite alternate;
+}
+
+@keyframes fadeBackground {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+header {
+    background-color: #072bf5;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+#logo {
+    width: 70px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #020202;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn,
+.signup-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 12px;
+    margin-left: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background-color: #45a049;
+  
+}
+
+.main {
+    padding: 20px;
+}
+
+.invest-section {
+    margin-top: 20px;
+}
+
+.investment-packages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 50px;
+
+}
+
+.package {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 20px;
+    width: 20%;
+}
+
+.package h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.package p {
+    margin-bottom: 10px;
+}
+
+.package button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.package button:hover {
+    background-color: #45a049;
+   
+}
+
+#silver-countdown,
+#bronze-countdown,
+#gold-countdown {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+ </style>
 </head>
 <body>
 
